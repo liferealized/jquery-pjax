@@ -92,6 +92,7 @@ function stripPjaxParam(url) {
     .replace(/\?_pjax=true&?/, '?')
     .replace(/_pjax=true&?/, '')
     .replace(/\?$/, '')
+    .replace(/&$/, '')
 }
 
 // Internal: Parse URL components and returns a Locationish object.
